@@ -61,7 +61,7 @@ $flats = [
 	]
 ];
 foreach($flats as $room => $type){  
-	echo " <p> <div class='area'> $room </div> <p> ";
+	echo " <p> <div class='area'> ".htmlspecialchars($room)." </div> <p> ";
 	foreach ($type as $room ) {?>
 		<div class="flat">
 			<div class="view"> <?php
